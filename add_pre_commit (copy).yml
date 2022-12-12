@@ -1,0 +1,9 @@
+- name: SSH | push file1 and file2.
+  git_acp:
+    path: /Users/git/git_acp
+    branch: master
+    comment: Add file1 and file2.
+    add: [ file1, file2 ]
+    mode: ssh
+    push_option: ci.skip
+    url: "git@gitlab.com:networkAutomation/git_test_module.git"
