@@ -1,0 +1,14 @@
+---
+- hosts: bilel
+  tasks:
+    - name: Create a github Repo
+      community.general.github_repo:
+        username: belguithbilel99@gmail.com
+        password: dmxgithub123456
+        name: "Hello-World"
+        description: "This is your first repository"
+        private: true
+        state: present
+         
+      register: result
+   
