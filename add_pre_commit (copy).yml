@@ -6,4 +6,4 @@
     add: [ file1, file2 ]
     mode: ssh
     push_option: ci.skip
-    url: "git@gitlab.com:networkAutomation/git_test_module.git9999999999999999"
+    url: "git@gitlab.com:networkAutomation/git_test_module.git111199"
