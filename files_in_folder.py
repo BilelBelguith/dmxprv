@@ -12,9 +12,3 @@ print(files_names)
 print(path_files)
 
 
-# for i in range(0 , len(files_names)):
-#     print(i)
-    azeazeazeazeaze
-azeazeazeaze99999999999999999999999999999
-azeazeazeaze
-azdazdazdazdazd
