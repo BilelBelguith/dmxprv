@@ -4,7 +4,7 @@
 	<!-- Based on https://raw.githubusercontent.com/cobertura/web/master/htdocs/xml/coverage-04.dtd -->
 	<sources>
 		<source></source>
-		<source>/home/bilel/FogitOPS</source>
+		<source>/var/jenkins_home/workspace/Github_Sonar_OK_main@tmp</source>
 	</sources>
 	<packages>
 		<package name="." line-rate="0.3846" branch-rate="0" complexity="0">
