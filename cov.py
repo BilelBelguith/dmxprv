@@ -6,4 +6,4 @@ x = os.system("coverage report --fail-under=80 -m  github_repo.py ")
 if x == 0:
     print("coverage test is succeed ! ")
 else:
-    print("Sorry!")
+    print("Sozdzdzdrry!")
