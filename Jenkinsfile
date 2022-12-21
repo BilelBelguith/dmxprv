@@ -7,7 +7,8 @@ node {
     
     }
     stage ('config tools coverage'){
-         sh "pip install coverage"
+         sh "pip install tox"
+         sh "tox -e py"
      
         
     }
