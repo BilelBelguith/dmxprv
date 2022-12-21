@@ -1,4 +1,4 @@
-name: Build
+name: Buildd
 jobs:
   sonarqube:
     name: SonarQube
