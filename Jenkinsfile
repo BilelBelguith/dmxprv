@@ -8,8 +8,7 @@ node {
     stage('sonar-scanner') {
       def sonarqubeScannerHome = tool name: 'sonarqube', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
       withCredentials([string(credentialsId: 'DMXfogits99', variable: 'bilel.belguith')]) {
-        sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOSTNAME} -Dsonar.login=bilel.belguith 
-        -Dsonar.projectKey=jenkinstest12 "
+        sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOSTNAME} -Dsonar.login=bilel.belguith -Dsonar.projectKey=jenkinstest12 "
       }
     }
 
