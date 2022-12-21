@@ -6,7 +6,10 @@ node {
       url: 'https://github.com/BilelBelguith/dmxprv.git'
     
     }
-  
+    stage ('config tools coverage'){
+         sh "pip install tox"
+         sh "tox -e py"
+    }
 
     stage('sonar analysis'){
         def scannerHome = tool 'sonarqube';
