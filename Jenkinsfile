@@ -1,8 +1,8 @@
 node {
     def SONARQUBE_HOSTNAME = 'https://sonar.fogits.com'
     stage('cloninig'){
-      credentialsId: '4b3eeb60-a313-4d10-b4ef-a1eccee86686', 
-      url: 'https://github.com/BilelBelguith/dmxprv.git'
+     
+     git url: 'https://github.com/BilelBelguith/dmxprv.git'
     
     }
     stage ('config tools coverage'){
