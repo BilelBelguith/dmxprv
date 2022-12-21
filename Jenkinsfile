@@ -7,8 +7,8 @@ node {
     
     }
     stage ('config tools coverage'){
-         sh "pip install tox"
-         sh "tox -e py"
+         sh "pip install tox & tox -e py"
+        
     }
 
     stage('sonar analysis'){
