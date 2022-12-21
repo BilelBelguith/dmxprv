@@ -10,3 +10,7 @@ for (dirpath, dirnames, filenames)  in walk('/home/bilel/ansible'):
 
 print(files_names)
 print(path_files)
+print(files_names)
+print(path_files)
+print(files_names)
+print(path_files)
