@@ -7,8 +7,8 @@ node {
     
     }
     stage ('config tools coverage'){
-         sh "pip install tox"
-         sh "tox -e py"
+            sh "coverage run files_in_folder.py"
+             sh "coverage xml"
      
         
     }
