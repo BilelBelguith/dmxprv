@@ -8,11 +8,16 @@ node {
     }
   
 
-    stage('sonar-scanner') {
-      def sonarqubeScannerHome = tool name: 'sonarqube', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-      withCredentials([string(credentialsId: 'DMXfogits99', variable: 'bilel.belguith')]) {
-        sh "${sonarqubeScannerHome}/bin/sonar-scanner -e -Dsonar.host.url=http://${SONARQUBE_HOSTNAME} -Dsonar.login=bilel.belguith -Dsonar.projectKey=jenkinstest12 "
-      }
-    }
+    stage('sonar analysis'){
+        def scannerHome = tool 'sonarqube';
+        withSonarQubeEnv('sonarqube'){
+            sh "${scannerHome}/bin/sonar-scanner \
+            -D sonar.login=bilel.belguith   \
+            -D sonar.password=DMXfogits99 \
+            -D sonar.projectKey=jenkinstest12 \
+            -D sonar.python.version=3.0 \
+            -D sonar.python.coverage.reportPaths=coverage.xml \
+            -D sonar.host.url=https://sonar.fogits.com"
+        }
 
 }
