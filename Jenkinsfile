@@ -18,6 +18,7 @@ node {
             -D sonar.python.version=3.0 \
             -D sonar.python.coverage.reportPaths=coverage.xml \
             -D sonar.host.url=https://sonar.fogits.com"
-        }
+                }
+    }
 
 }
