@@ -1,4 +1,4 @@
-from odoo import _, api, exceptions, fields, models
+from odoo import  api, exceptions, fields, models
 
 
 class StockMove(models.Model):
