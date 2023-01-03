@@ -1,4 +1,4 @@
-from odoo.tests.common import TransactionCase
+from odoo import TransactionCase
 
 
 class TestRestrictLot(TransactionCase):
